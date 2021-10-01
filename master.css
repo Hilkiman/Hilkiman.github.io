@@ -41,6 +41,7 @@
   	 background: #d2d0d2; 
      width: 900px;
     height: 900px; 
+    display:flex;
 }
 
 
