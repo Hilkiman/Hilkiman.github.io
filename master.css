@@ -47,6 +47,9 @@
 TD,TH{
  border: 1px solid black;
 }
+.news{
+	font-size:20px;
+}
 
   	  #footer {
   	   background: black;
