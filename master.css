@@ -40,7 +40,7 @@
   	#content {
   	 background: #d2d0d2; 
      width: 900px;
-    height: 1300px; 
+    height: 900px; 
     display:flex;
 }
 
@@ -88,7 +88,6 @@ input[type=submit]:hover {
 /* Style the container/contact section */
 .container {
     border-radius: 5px;
-    background-color: #f2f2f2;
     padding: 10px;
 }
 
