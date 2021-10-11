@@ -1,0 +1,12 @@
+User-agent:Yandex
+Disallow: /Admin
+Dissalow: /page? #
+sitemap: https://hilkiman.github.io/sitemap.xml
+User-agent:googlebot
+Disallow: /Admin
+Dissalow: /page? #
+sitemap: https://hilkiman.github.io/sitemap.xml
+User-agent:*
+Disallow: /Admin
+Dissalow: /page? #
+sitemap: https://hilkiman.github.io/sitemap.xml
