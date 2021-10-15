@@ -1,0 +1,28 @@
+.htaccess
+
+#nachalo
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} https://hilkiman.github.io/$ [NC]
+RewriteCond ^{.*}$ https://hilkiman.github.io/$1 [R=301,L]
+
+
+#переадресует index.php и index.html
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\/index\.html\ HTTP/
+RewriteRule ^index\.html$ http://https://hilkiman.github.io [L,R=301]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\/index\.php\
+RewriteRule ^index\.php$ http://https://hilkiman.github.io [L,R=301]
+
+#переадресует на https
+RewriteCond %{SERVER_PORT} ! ^443$
+RewriteCond .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+
+#редирект на без слеша
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !\..{1,10}$
+RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteRule ^(.*)$ http://https://hilkiman.github.io [L,R=301]
+
+
+
+
