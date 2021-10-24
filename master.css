@@ -23,6 +23,9 @@
     height: 100px; 
     width: 900px; 
 }
+.head{
+font-size:30px;
+}
 
 .logo{
 	padding:10px;
