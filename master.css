@@ -4,8 +4,7 @@
 	 background-size:cover;
      color:black; 
      font-family: Trebuchet MS, Arial, Times New Roman;
-      font-size: 12px;
-
+     font-size: 12px;
 } 
 #wrapper { 
 	background: #FFFFFF; 
@@ -27,7 +26,6 @@
 
 .logo{
 	padding:10px;
-	
 	width:150px; 
 	height:100px;
 }
@@ -61,7 +59,7 @@ TD,TH{
   	  #footer {
   	   background: black;
   	   color:grey;
-        height: 100px;
+        height: 50px;
          width: 900px; 
          display:flex;
      }
