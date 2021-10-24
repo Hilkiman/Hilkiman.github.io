@@ -41,7 +41,8 @@
 } 
 
   	#content {
-  	 background: ; 
+	padding:10px;
+  	 background:white; 
      width: 900px;
     height: 900px; 
     display:flex;
