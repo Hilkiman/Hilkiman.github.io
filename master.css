@@ -1,7 +1,7 @@
 ﻿body { 
 	background: url(wallpaper.jpg);
 	 bacgound-attachment:fixed;
-	 background-repeat:repeat-x;
+	 background-repeat:no-repeat;
      color: #000000; 
      font-family: Trebuchet MS, Arial, Times New Roman;
       font-size: 12px;
