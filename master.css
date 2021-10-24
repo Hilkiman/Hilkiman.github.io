@@ -1,7 +1,5 @@
 ﻿body { 
-	background: url(wallpaper.jpg);
-	 bacgound-attachment:fixed;
-	 background-repeat:no-repeat;
+	
      color: #000000; 
      font-family: Trebuchet MS, Arial, Times New Roman;
       font-size: 12px;
@@ -13,6 +11,8 @@
     width: 900px; 
     height: 1024px; 
   }
+.wallpaper{
+	position:absoluto;
 
 
  #header
