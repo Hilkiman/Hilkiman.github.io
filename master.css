@@ -61,7 +61,7 @@ TD,TH{
   	  #footer {
   	   background: black;
   	   color:grey;
-        height: 130px;
+        height: 100px;
          width: 900px; 
          display:flex;
      }
