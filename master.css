@@ -19,7 +19,7 @@
  #header
  { 
  	display: flex;
-	 justify-content:space-evenly
+	 justify-content:space-evenly;
 	 background: grey; 
     height: 100px; 
     width: 900px; 
