@@ -2,7 +2,7 @@
 	background:url(wallpaper.jpg);
 	 background-repeat: no-repeat;
 	 background-size:cover;
-     color:white; 
+     color:black; 
      font-family: Trebuchet MS, Arial, Times New Roman;
       font-size: 12px;
 
@@ -19,7 +19,7 @@
  #header
  { 
  	display: flex;
- 	background: black; 
+ 	background: blue; 
     height: 200px; 
     width: 900px; 
 }
@@ -41,7 +41,7 @@
 } 
 
   	#content {
-  	 background: #d2d0d2; 
+  	 background: ; 
      width: 900px;
     height: 900px; 
     display:flex;
