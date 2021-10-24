@@ -1,6 +1,7 @@
 ﻿body { 
 	background:url(wallpaper.jpg);
 	 background-repeat: no-repeat;
+	 background-size:cover;
      color: #000000; 
      font-family: Trebuchet MS, Arial, Times New Roman;
       font-size: 12px;
