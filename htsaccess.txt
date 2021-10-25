@@ -3,6 +3,7 @@
 #nachalo
 Options +FollowSymLinks
 RewriteEngine on
+ErrorDocument 404 /404.html
 RewriteCond %{HTTP_HOST} https://hilkiman.github.io/$ [NC]
 RewriteCond ^{.*}$ https://hilkiman.github.io/$1 [R=301,L]
 
@@ -22,5 +23,5 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_URI} !\..{1,10}$
 RewriteCond %{REQUEST_URI} !(.*)/$
 RewriteRule ^(.*)$ http://https://hilkiman.github.io [L,R=301]
-ErrorDocument 404 https://site.ru/404.html
-Disallow: /404.html
+
+
