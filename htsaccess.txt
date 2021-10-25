@@ -7,22 +7,20 @@ RewriteCond %{HTTP_HOST} https://hilkiman.github.io/$ [NC]
 RewriteCond ^{.*}$ https://hilkiman.github.io/$1 [R=301,L]
 
 
-#переадресует index.php и index.html
+#ГЇГҐГ°ГҐГ Г¤Г°ГҐГ±ГіГҐГІ index.php ГЁ index.html
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\/index\.html\ HTTP/
 RewriteRule ^index\.html$ http://https://hilkiman.github.io [L,R=301]
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\/index\.php\
 RewriteRule ^index\.php$ http://https://hilkiman.github.io [L,R=301]
 
-#переадресует на https
+#ГЇГҐГ°ГҐГ Г¤Г°ГҐГ±ГіГҐГІ Г­Г  https
 RewriteCond %{SERVER_PORT} ! ^443$
 RewriteCond .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
 
-#редирект на без слеша
+#Г°ГҐГ¤ГЁГ°ГҐГЄГІ Г­Г  ГЎГҐГ§ Г±Г«ГҐГёГ 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_URI} !\..{1,10}$
 RewriteCond %{REQUEST_URI} !(.*)/$
 RewriteRule ^(.*)$ http://https://hilkiman.github.io [L,R=301]
-
-
-
-
+ErrorDocument 404 https://site.ru/404.html
+Disallow: /404.html
