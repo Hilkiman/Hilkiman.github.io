@@ -5,6 +5,8 @@
      color:black; 
      font-family: Trebuchet MS, Arial, Times New Roman;
      font-size: 12px;
+	 overflow: auto;
+   	 overflow-x: hidden;
 } 
 #wrapper { 
 	background: #FFFFFF; 
