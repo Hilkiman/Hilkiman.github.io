@@ -1,4 +1,4 @@
-﻿body { 
+body { 
 		background:url(wallpaper.jpg);
 		 background-repeat: no-repeat;
 		 background-size:cover;
@@ -23,7 +23,7 @@
 	 justify-content:space-evenly;
 	 background: grey; 
     height: 100px; 
-    width: 200px; 
+    width: 300px; 
 }
 .head{
 font-size:30px;
@@ -37,18 +37,18 @@ font-size:30px;
 
  #navigation {
   background: #a2a2a2;
-   width: 200px; 
+   width: 300px; 
    height: 30px;
     display:flex;
     justify-content:space-evenly;
-    float:right;
+ 
 } 
 
   	#content {
 	padding:10px;
   	 background:#d6d6d6; 
-     width: 200px;
-    height: 900px; 
+     width: 300px;
+    height: 1300px; 
     display:flex;
 flex-direction: column;
 }
@@ -65,7 +65,7 @@ TD,TH{
   	   background: black;
   	   color:grey;
         height: 50px;
-         width: 200px; 
+         width: 300px; 
          display:flex;
      }
 * {
@@ -122,3 +122,4 @@ input[type=submit]:hover {
         margin-top: 0;
     }
 }
+
