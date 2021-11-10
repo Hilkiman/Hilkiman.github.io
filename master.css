@@ -10,9 +10,9 @@ body {
 } 
 #wrapper { 
 	background: #FFFFFF; 
-    margin: 60px auto; 
+    margin: px auto; 
     width: 200px; 
-    height: 1024px; 
+    height: 1536px; 
   }
 
 
@@ -26,12 +26,12 @@ body {
     width: 300px; 
 }
 .head{
-font-size:30px;
+font-size:25px;
 }
 
 .logo{
 	padding:10px;
-	width:150px; 
+	width:130px; 
 	height:100px;
 }
 
