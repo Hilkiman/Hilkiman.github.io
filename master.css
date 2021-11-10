@@ -1,17 +1,17 @@
 ﻿body { 
-	background:url(wallpaper.jpg);
-	 background-repeat: no-repeat;
-	 background-size:cover;
-     color:black; 
-     font-family: Trebuchet MS, Arial, Times New Roman;
-     font-size: 12px;
-	 overflow: auto;
-   	 overflow-x: hidden;
+		background:url(wallpaper.jpg);
+		 background-repeat: no-repeat;
+		 background-size:cover;
+	     color:black; 
+	     font-family: Trebuchet MS, Arial, Times New Roman;
+	     font-size: 12px;
+		 overflow: auto;
+		 overflow-x: hidden;
 } 
 #wrapper { 
 	background: #FFFFFF; 
     margin: 60px auto; 
-    width: 900px; 
+    width: 100px; 
     height: 1024px; 
   }
 
@@ -37,7 +37,7 @@ font-size:30px;
 
  #navigation {
   background: #a2a2a2;
-   width: 900px; 
+   width: 100px; 
    height: 30px;
     display:flex;
     justify-content:space-evenly;
@@ -47,7 +47,7 @@ font-size:30px;
   	#content {
 	padding:10px;
   	 background:#d6d6d6; 
-     width: 900px;
+     width: 100px;
     height: 900px; 
     display:flex;
 flex-direction: column;
@@ -65,7 +65,7 @@ TD,TH{
   	   background: black;
   	   color:grey;
         height: 50px;
-         width: 900px; 
+         width: 100px; 
          display:flex;
      }
 * {
