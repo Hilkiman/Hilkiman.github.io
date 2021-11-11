@@ -60,6 +60,10 @@ TD,TH{
 .news{
 	font-size:20px;
 }
+table {
+   hight:200px;
+  weight:200px;
+}
 
   	  #footer {
   	   background: black;
