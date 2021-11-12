@@ -12,7 +12,7 @@ body {
 	background: #FFFFFF; 
     margin: px auto; 
     width: 200px; 
-     margin-left:35px;
+     
 
   }
 
@@ -40,7 +40,7 @@ font-size:25px;
  #navigation {
   background: #a2a2a2;
    width: 300px; 
-   height: 30px;
+   height: 40px;
     display:flex;
     justify-content:space-evenly;
  
