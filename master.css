@@ -12,6 +12,7 @@ body {
 	background: #FFFFFF; 
     margin: px auto; 
     width: 200px; 
+     margin-left:35px;
 
   }
 
@@ -24,6 +25,7 @@ body {
 	 background: grey; 
     height: 100px; 
     width: 300px; 
+    
 }
 .head{
 font-size:25px;
