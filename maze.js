@@ -2,6 +2,14 @@
 var canvas;
 var context;
 
+// Отслеживаем текущую позицию значка
+var x = 0;
+var y = 0;
+
+// Скорость перемещения значка
+var dx = 0;
+var dy = 0;
+
 window.onload = function() {
   // Подготавливаем холст
   canvas = document.getElementById("canvas");
@@ -13,9 +21,7 @@ window.onload = function() {
   // При нажатии клавиши вызываем функцию processKey()
   window.onkeydown = processKey;
 };
-// Отслеживаем текущую позицию значка
-var x = 0;
-var y = 0;
+
 
 // Таймер, включающий и отключающий новый лабиринт в любое время
 var timer;
@@ -53,9 +59,6 @@ function drawMaze(mazeFile, startingX, startingY) {
   imgMaze.src = mazeFile;
 }
 
-// Скорость перемещения значка
-var dx = 0;
-var dy = 0;
 
 function processKey(e) {
   // Если значок находится в движении, останавливаем его
@@ -82,6 +85,32 @@ function processKey(e) {
     dx = 1;
   }
 }
+
+function checkForCollision() {
+  // Перебираем все пикселы и инвертируем их цвет
+  var imgData = context.getImageData(x-1, y-1, 15+2, 15+2);
+  var pixels = imgData.data;
+
+  // Получаем данные для одного пиксела
+  for (var i = 0; n = pixels.length, i < n; i += 4) {
+    var red = pixels[i];
+    var green = pixels[i+1];
+    var blue = pixels[i+2];
+    var alpha = pixels[i+3];
+
+    // Смотрим на наличие черного цвета стены, что указывает на столкновение
+    if (red == 0 && green == 0 && blue == 0) {
+      return true;
+    }
+    // Смотрим на наличие серого цвета краев, что указывает на столкновение
+    if (red == 169 && green == 169 && blue == 169) {
+      return true;
+    }
+  }
+  // Столкновения не было
+  return false;
+}
+
 
 function drawFrame() {
   // Обновляем кадр только если значок движется
@@ -119,4 +148,12 @@ function drawFrame() {
 
   // Рисуем следующий кадр через 10 миллисекунд
   timer = setTimeout("drawFrame()", 10);
+}
+
+function loadEasy() {
+  drawMaze('easy_maze.png', 5, 5);
+}
+
+function loadHard() {
+  drawMaze('maze.png', 268, 5);
 }
