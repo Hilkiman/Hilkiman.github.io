@@ -10,10 +10,9 @@ body {
 } 
 #wrapper { 
 	background: #FFFFFF; 
-    margin: px auto; 
-    width: 200px; 
-     
-
+    margin: 60px auto; 
+    width: 900px; 
+    height: 1024px; 
   }
 
 
@@ -24,33 +23,32 @@ body {
 	 justify-content:space-evenly;
 	 background: grey; 
     height: 100px; 
-    width: 300px; 
-    
+    width: 900px; 
 }
 .head{
-font-size:25px;
+font-size:30px;
 }
 
 .logo{
 	padding:10px;
-	width:130px; 
+	width:150px; 
 	height:100px;
 }
 
  #navigation {
   background: #a2a2a2;
-   width: 300px; 
-   height: 40px;
+   width: 900px; 
+   height: 30px;
     display:flex;
     justify-content:space-evenly;
- 
+    float:right;
 } 
 
   	#content {
 	padding:10px;
   	 background:#d6d6d6; 
-     width: 300px;
-    height: 1300px; 
+     width: 900px;
+    height: 900px; 
     display:flex;
 flex-direction: column;
 }
@@ -63,12 +61,11 @@ TD,TH{
 	font-size:20px;
 }
 
-
   	  #footer {
   	   background: black;
   	   color:grey;
         height: 50px;
-         width: 300px; 
+         width: 900px; 
          display:flex;
      }
 * {
@@ -125,4 +122,3 @@ input[type=submit]:hover {
         margin-top: 0;
     }
 }
-
