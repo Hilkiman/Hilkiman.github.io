@@ -127,6 +127,8 @@ input[type=submit]:hover {
  canvas {
     border: 6px double black;
     background: white;
+    height:200px;
+    width:300px;
   }
 
   img {
