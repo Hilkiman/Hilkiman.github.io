@@ -67,11 +67,18 @@ intel i5 игровой процессор
 	   
 	    <div id="content">
 		    
-		    <!-- Put this div tag to the place, where the Comments block will be -->
-<div id="vk_comments"></div>
-<script type="text/javascript">
-VK.Widgets.Comments("vk_comments", {limit: 20, width: "900", attach: "*"});
-</script>
+		    <script src="//ulogin.ru/js/ulogin.js"></script>
+<div id="uLogin" data-ulogin="display=panel;theme=classic;fields=first_name,last_name;providers=vkontakte,odnoklassniki,mailru,facebook;hidden=other;redirect_uri=http%3A%2F%2F;mobilebuttons=0;"></div>
+	
+			
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6"></script>
+
+<!-- Your embedded comments code -->
+<div class="fb-comment-embed"
+   data-href="https://www.facebook.com/zuck/posts/10102735452532991?comment_id=1070233703036185"
+   data-width="500"></div>
 		
 		    <p align="center" style="font-size:20px">Основные виды процессоров</p>
 	    <img src="pasta.jpg" width="10px" height="10px" class="pasta">
@@ -103,18 +110,7 @@ CISC. Издастся фирмой Intel, считается вычислите
 			    
 </ol>
 		
-	<script src="//ulogin.ru/js/ulogin.js"></script>
-<div id="uLogin" data-ulogin="display=panel;theme=classic;fields=first_name,last_name;providers=vkontakte,odnoklassniki,mailru,facebook;hidden=other;redirect_uri=http%3A%2F%2F;mobilebuttons=0;"></div>
 	
-			
-<!-- Load Facebook SDK for JavaScript -->
-<div id="fb-root"></div>
-<script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6"></script>
-
-<!-- Your embedded comments code -->
-<div class="fb-comment-embed"
-   data-href="https://www.facebook.com/zuck/posts/10102735452532991?comment_id=1070233703036185"
-   data-width="500"></div>
 			
 </div>
 		
@@ -137,6 +133,12 @@ CISC. Издастся фирмой Intel, считается вычислите
 		})(); 
 	</script>
 <!-- / End of Cleversite chat button -->
+		
+		 <!-- Put this div tag to the place, where the Comments block will be -->
+<div id="vk_comments"></div>
+<script type="text/javascript">
+VK.Widgets.Comments("vk_comments", {limit: 20, width: "900", attach: "*"});
+</script>
 	     <div id="footer"> 
 		     <p>@Артем Вербин 2021</P>
 	
